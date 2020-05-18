@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SelectionActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/spin_faculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"
+            android:hint="@string/welche_fach_studieren_sie"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_divider_show="true"
+            app:spinner_item_array="@array/direction_of_studies"
+            app:spinner_popup_animation="fade"
+            app:spinner_popup_background="@color/colorAccent"
+            app:spinner_popup_elevation="14dp" />
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/spin_semesters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"
+            android:hint="@string/welches_semester_ist_es_jetzt"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_divider_show="true"
+            app:spinner_item_array="@array/semester"
+            app:spinner_popup_animation="fade"
+            app:spinner_popup_background="@color/colorAccent"
+            app:spinner_popup_elevation="14dp" />
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/spin_semesters_ongoing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"
+            android:hint="@string/ie_viele_semester_wurden_bereits_gemacht"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_divider_show="true"
+            app:spinner_item_array="@array/semester_ongoing"
+            app:spinner_popup_animation="fade"
+            app:spinner_popup_background="@color/colorAccent"
+            app:spinner_popup_elevation="14dp" />
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/spin_zwai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"
+            android:hint="@string/zwai_fbinf30_or_zwai_fbinf60"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_divider_show="true"
+            app:spinner_item_array="@array/zfbinfo"
+            app:spinner_popup_animation="fade"
+            app:spinner_popup_background="@color/colorAccent"
+            app:spinner_popup_elevation="14dp" />
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/spin_lehtamt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"
+            android:hint="@string/lehtamt"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_divider_show="true"
+            app:spinner_item_array="@array/lehramt"
+            app:spinner_popup_animation="fade"
+            app:spinner_popup_background="@color/colorAccent"
+            app:spinner_popup_elevation="14dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_info"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/info"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_load"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableEnd="@drawable/ic_next"
+        android:drawablePadding="6dp"
+        android:gravity="start|center"
+        android:padding="16dp"
+        android:text="@string/load_subjects"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btn_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

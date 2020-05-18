@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.RecommendationActivity">
+
+    <Button
+        android:id="@+id/btn_reset"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/clear_all"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_reset">
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/spin_recommend_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGray"
+            android:padding="10dp"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_divider_show="true"
+            app:spinner_popup_animation="fade"
+            app:spinner_popup_background="@color/colorWhite"
+            app:spinner_popup_elevation="14dp" />
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/spin_recommend_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGray"
+            android:padding="10dp"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_divider_show="true"
+            app:spinner_popup_animation="fade"
+            app:spinner_popup_background="@color/colorWhite"
+            app:spinner_popup_elevation="14dp" />
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/spin_recommend_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGray"
+            android:padding="10dp"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_divider_show="true"
+            app:spinner_popup_animation="fade"
+            app:spinner_popup_background="@color/colorWhite"
+            app:spinner_popup_elevation="14dp" />
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/spin_recommend_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGray"
+            android:padding="10dp"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_divider_show="true"
+            app:spinner_popup_animation="fade"
+            app:spinner_popup_background="@color/colorWhite"
+            app:spinner_popup_elevation="14dp" />
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/spin_recommend_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGray"
+            android:padding="10dp"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_divider_show="true"
+            app:spinner_popup_animation="fade"
+            app:spinner_popup_background="@color/colorWhite"
+            app:spinner_popup_elevation="14dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_modules"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/modules"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btn_history"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_history"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/history"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btn_change"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_change"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/change_semester"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
