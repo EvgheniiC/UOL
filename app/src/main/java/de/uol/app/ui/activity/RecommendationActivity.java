@@ -281,10 +281,10 @@ public class RecommendationActivity extends AppCompatActivity {
     @OnClick(R.id.btn_reset)
     void onResetClick() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Clear all data").
-                setMessage("Are you sure?").
-                setNegativeButton("No", null).
-                setPositiveButton("Yes", (dialogInterface, i) -> {
+        builder.setTitle("Alle Daten löschen").
+                setMessage("Sind Sie sicher?").
+                setNegativeButton("Nein", null).
+                setPositiveButton("Ja", (dialogInterface, i) -> {
                     Variables.spinnerSemesterIndex = -1;
                     Variables.spinnerFacultyIndex = -1;
                     Variables.spinnerSemesterOngoingIndex = -1;

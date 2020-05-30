@@ -115,8 +115,6 @@ public class SubjectsData {
         infRecommend.add(new ArrayList<>(Arrays.asList("inf200", "inf201", "inf202")));
         infRecommend.add(new ArrayList<>(Arrays.asList("inf851")));
         infRecommend.add(new ArrayList<>(Arrays.asList("pb216")));
-        //добавить условие, если KP у Wahl-Mathe == 0, то рекомендует один модуль  из списка Wahl-Mathe
-        //+ Условие для BAM(сданы  inf030,031,200,400) + 120 KP TODO
     }
 
     private void initWirtsModules() {
@@ -214,7 +212,6 @@ public class SubjectsData {
         wirtsModules.add(new ModuleModel.Builder().setId("wir260").setName("Umweltökonomie").setMark(6).setKeys(new ArrayList<>(Arrays.asList("AS-WiWi", "AS-WiWi"))).setSeason(ModuleModel.Season.winter).setType(ModuleModel.Type.optional).build());
         wirtsModules.add(new ModuleModel.Builder().setId("wir360").setName("Umwelt- und Nachhaltigkeitspolitik").setMark(6).setKeys(new ArrayList<>(Arrays.asList("AS-WiWi", "AS-WiWi"))).setSeason(ModuleModel.Season.summer).setType(ModuleModel.Type.optional).build());
         wirtsModules.add(new ModuleModel.Builder().setId("wir400").setName("Strategisches und Internationales Marketing").setMark(6).setKeys(new ArrayList<>(Arrays.asList("AS-WiWi", "AS-WiWi"))).setSeason(ModuleModel.Season.summer).setType(ModuleModel.Type.optional).build());
-
         wirtsModules.add(new ModuleModel.Builder().setId("BAM").setName("Bachelorabschlussmodul").setMark(15).setKeys(new ArrayList<>(Arrays.asList("Pflicht", "Pflicht"))).setSeason(ModuleModel.Season.demi).setType(ModuleModel.Type.mandatory).build());
     }
 
@@ -222,11 +219,10 @@ public class SubjectsData {
         wirtsRecommen = new ArrayList<>();
 
         wirtsRecommen.add(new ArrayList<>(Arrays.asList("inf030", "inf031", "inf004")));
-        wirtsRecommen.add(new ArrayList<>(Arrays.asList("mat960")));
+        wirtsRecommen.add(new ArrayList<>(Arrays.asList("mat950")));
         wirtsRecommen.add(new ArrayList<>(Arrays.asList("wir011")));
         wirtsRecommen.add(new ArrayList<>(Arrays.asList("inf600", "inf601")));
         wirtsRecommen.add(new ArrayList<>(Arrays.asList("pb085")));
-
 
         wirtsRecommen.add(new ArrayList<>(Arrays.asList("inf852")));
         wirtsRecommen.add(new ArrayList<>(Arrays.asList("wir083")));
@@ -236,16 +232,11 @@ public class SubjectsData {
 
         wirtsRecommen.add(new ArrayList<>(Arrays.asList("inf800")));
         wirtsRecommen.add(new ArrayList<>(Arrays.asList("inf007")));
-        //добавить условие, если KP у Wahl-Mathe == 0, то рекомендует два случайных модуля  из списка Wahl-Mathe
-        //добавить условие, если KP у Wahl-Mathe == 6, то рекомендует один случайный модуль  из списка Wahl-Mathe
-
 
         wirtsRecommen.add(new ArrayList<>(Arrays.asList("inf608")));
         wirtsRecommen.add(new ArrayList<>(Arrays.asList("inf851")));
         wirtsRecommen.add(new ArrayList<>(Arrays.asList("pb216")));
-//        + Условие для BAM(сданы  inf030,031,200,400) + 120 KP
-//
-//        добавить условие, если KP у Wahl-PI == 0, то рекомендует один случайный модуль  из списка Wahl-PI TODO
+
     }
 
     private void initZwei30Modules() {
@@ -305,8 +296,6 @@ public class SubjectsData {
         zwei60Modules.add(new ModuleModel.Builder().setId("inf408").setName("Algorithmen zur Software-Verifikation").setMark(6).setKeys(new ArrayList<>(Arrays.asList("Wahl Theo", "Wahl Theo"))).setSeason(ModuleModel.Season.unregular).setType(ModuleModel.Type.optional).build());
 
         zwei60Modules.add(new ModuleModel.Builder().setId("inf700").setName("Didaktik der Informatik I").setMark(6).setKeys(new ArrayList<>(Arrays.asList("Basis-Pflicht", "Pflicht"))).setSeason(ModuleModel.Season.summer).setType(ModuleModel.Type.mandatory).build());
-
-
         zwei60Modules.add(new ModuleModel.Builder().setId("inf800").setName("Proseminar Informatik").setMark(3).setKeys(new ArrayList<>(Arrays.asList("Pflicht", "Pflicht"))).setSeason(ModuleModel.Season.demi).setType(ModuleModel.Type.mandatory).build());
         zwei60Modules.add(new ModuleModel.Builder().setId("inf803").setName("Spezielle Themen der Informatik I").setMark(6).setKeys(new ArrayList<>(Arrays.asList("Wahl", "Wahl"))).setSeason(ModuleModel.Season.unregular).setType(ModuleModel.Type.optional).build());
         zwei60Modules.add(new ModuleModel.Builder().setId("inf804").setName("Spezielle Themen der Informatik II").setMark(6).setKeys(new ArrayList<>(Arrays.asList("Wahl", "Wahl"))).setSeason(ModuleModel.Season.unregular).setType(ModuleModel.Type.optional).build());
@@ -328,8 +317,6 @@ public class SubjectsData {
 
         zwei60Modules.add(new ModuleModel.Builder().setId("pb015").setName("Soziologie: Individuum und Gesellschaft").setMark(6).setKeys(new ArrayList<>(Arrays.asList("PB-WahlPflicht", "PB"))).setSeason(ModuleModel.Season.winter).setType(ModuleModel.Type.optional).build());
         zwei60Modules.add(new ModuleModel.Builder().setId("prx102").setName("Allgemeines Schulpraktikum").setMark(9).setKeys(new ArrayList<>(Arrays.asList("PB-PraxisPflicht", "PB"))).setSeason(ModuleModel.Season.summer).setType(ModuleModel.Type.mandatory).build());
-
-
     }
 
     private void initZwei30Recommend() {
@@ -347,17 +334,12 @@ public class SubjectsData {
             zwei30Recommend.add(new ArrayList<>(Arrays.asList("inf200")));
         }
 
-//далее я напишу текстом
-//если сдан prx101 ИЛИ prx106,то рекомендуем prx107
-// если сдан prx107,то рекомендуем prx101
-//если не сдан НИ ОДИН ИЗ prx101,prx106,prx107,то рекомендуем prx108
-
     }
 
     private void initZwei60Recommend() {
         zwei60Recommend = new ArrayList<>();
 
-        if(Variables.spinnerLehtIndex == 0) {
+        if (Variables.spinnerLehtIndex == 0) {
             zwei60Recommend.add(new ArrayList<>(Arrays.asList("inf030", "inf031")));
             zwei60Recommend.add(new ArrayList<>(Arrays.asList("inf200")));
             zwei60Recommend.add(new ArrayList<>(Arrays.asList("mat950")));
@@ -379,18 +361,6 @@ public class SubjectsData {
             zwei60Recommend.add(new ArrayList<>(Arrays.asList("inf800")));
         }
 
-
-//если не сдан НИ ОДИН ИЗ inf009,inf014,inf018,inf021,inf202,inf406,inf803,inf804,inf808, то рекомендуем inf004
-//если СДАН ОДИН ИЗ inf009,inf014,inf018,inf021,inf202,inf406,inf803,inf804  то рекомендуем inf808
-
-//если сдан prx101 ИЛИ prx106,то рекомендуем prx107
-// если сдан prx107,то рекомендуем prx101
-//если не сдан НИ ОДИН ИЗ prx101,prx106,prx107,то рекомендуем prx108
-//если не сдан НИ ОДИН ИЗ inf009,inf014,inf018,inf021,inf202,inf406,inf803,inf804,inf808, то рекомендуем inf004
-//если СДАН ОДИН ИЗ inf009,inf014,inf018,inf021,inf202,inf406,inf803,inf804  то рекомендуем inf808
-//если сдан prx101 ИЛИ prx106,то рекомендуем prx107
-// если сдан prx107,то рекомендуем prx101
-//если не сдан НИ ОДИН ИЗ prx101,prx106,prx107,то рекомендуем prx108
     }
 
     public List<ModuleModel> getInfModules() {

@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">UOL</string>
-    <string name="welche_fach_studieren_sie">Welche Fach studieren Sie?</string>
-    <string name="welches_semester_ist_es_jetzt">Welches Semester ist es jetzt?</string>
-    <string name="ie_viele_semester_wurden_bereits_gemacht">Wie viele Semester wurden bereits gemacht?</string>
-    <string name="zwai_fbinf30_or_zwai_fbinf60">Zwai FBInf30 or Zwai FBInf60?</string>
-    <string name="lehtamt">LehtAmt?</string>
+    <string name="Welches_fach_studieren_sie">Welches Fach studieren Sie?</string>
+    <string name="Welches_semester_ist_es_jetzt">Welches Semester ist es jetzt?</string>
+    <string name="Wie_viele_semester_wurden_bereits_gemacht">Wie viele Semester wurden bereits gemacht?</string>
+    <string name="Zwei_fbinf30_or_Zwei_fbinf60">Zwei FBInf30 or Zwei FBInf60?</string>
+    <string name="Lehtamt">LehtAmt?</string>
 
     <string name="load_subjects">Load subjects list</string>
     <string name="info">Info</string>
@@ -38,10 +38,10 @@
 
 
     <string name="info_text">Diese App wurde für die Studierenden, die nach der Prüfungsordnung 2019 streben, entworfen\n\nDie App wurde für die Carl von Ossietzky Universität in Oldenburg entwickelt und soll Studierenden der Fach-Bachelor Informatik, der Fach-Bachelor Wirtschaftsinformatik und der Zwei-Fächer-Bachelor Informatik bei der Erstellung einen Studienplan unterstützen.\n\nUm einen Studienplan zu erstellen, wählen Sie das gewünschte Fach, Winter- oder Sommersemester sowie das laufende Semester aus.\n\nFalls Sie sich im höheren Fachsemester befinden, wählen Sie aus der Modulen- Liste diejenigen Module aus, die Sie bereits bestanden haben, um sie aus der Liste zu löschen. Dafür klicken Sie bitte auf den Papierkorb, der sich links neben den Modulnamen befindet. Nachdem Sie die Module bereits entfernt haben, klicken Sie auf das Häkchen in der oberen rechten Ecke.\n\nBasierend auf den von Ihnen eingegebenen Daten bietet die App einen Studienplan für das gewünschte Semester (z.B. Wintersemester) an.\n\nZunächst werden Pflicht- Module angezeigt, die Sie im ausgewählten Semester belegen können. Sie können auch andere Module aus der Liste auswählen und sie Ihrem Studienplan hinzufügen, indem Sie auf eins von den angezeigten Modulen klicken. Wenn Sie im kommenden Semester eins oder mehrere angebotenen Modulen nicht machen möchten, dann klicken Sie in der Liste auf das Symbol „---„. So wird das übersichtlich, wie viele und welche Module Sie Ihrem Studienplan hinzugefügt haben.\n\nWenn die Auswahl der Module abgeschlossen ist, können Sie Ihren Studienplan speichern, indem Sie auf das Symbol „Speichern“ in der oberen rechten Ecke klicken.</string>
-    <string name="info_subject_text">Diese App wurde für die Studierenden, die nach der Prüfungsordnung 2019 streben, entworfen\n\nDie App wurde für die Carl von Ossietzky Universität in Oldenburg entwickelt und soll Studierenden der Fach-Bachelor Informatik, der Fach-Bachelor Wirtschaftsinformatik und der Zwei-Fächer-Bachelor Informatik bei der Erstellung einen Studienplan unterstützen.\n\nUm einen Studienplan zu erstellen, wählen Sie das gewünschte Fach, Winter- oder Sommersemester sowie das laufende Semester aus.\n\nFalls Sie sich im höheren Fachsemester befinden, wählen Sie aus der Modulen- Liste diejenigen Module aus, die Sie bereits bestanden haben, um sie aus der Liste zu löschen. Dafür klicken Sie bitte auf den Papierkorb, der sich links neben den Modulnamen befindet. Nachdem Sie die Module bereits entfernt haben, klicken Sie auf das Häkchen in der oberen rechten Ecke.\n\nBasierend auf den von Ihnen eingegebenen Daten bietet die App einen Studienplan für das gewünschte Semester (z.B. Wintersemester) an.\n\nZunächst werden Pflicht- Module angezeigt, die Sie im ausgewählten Semester belegen können. Sie können auch andere Module aus der Liste auswählen und sie Ihrem Studienplan hinzufügen, indem Sie auf eins von den angezeigten Modulen klicken. Wenn Sie im kommenden Semester eins oder mehrere angebotenen Modulen nicht machen möchten, dann klicken Sie in der Liste auf das Symbol „---„. So wird das übersichtlich, wie viele und welche Module Sie Ihrem Studienplan hinzugefügt haben.\n\nWenn die Auswahl der Module abgeschlossen ist, können Sie Ihren Studienplan speichern, indem Sie auf das Symbol „Speichern“ in der oberen rechten Ecke klicken.</string>
-    <string name="save">Save</string>
+    <string name="info_subject_text">  Info wie kann man App benutzen </string>
+    <string name="save">Speichern</string>
     <string name="modules">Modules</string>
-    <string name="change_semester">Change semester</string>
+    <string name="change_semester">Semester wechseln</string>
     <string name="history">History</string>
 
     <string name="kp">KP : %d</string>
@@ -55,6 +55,6 @@
     <string name="wahl_pi_kp">Wahl-PI (KP) : %d</string>
     <string name="inf_kp">AS-Informatik (KP) : %d</string>
 
-    <string name="back">Back</string>
-    <string name="clear_all">Clear All</string>
+    <string name="back">Zurück</string>
+    <string name="clear_all">Alle Daten löschen</string>
 </resources>

@@ -1,6 +1,5 @@
 package de.uol.app.utils;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 
